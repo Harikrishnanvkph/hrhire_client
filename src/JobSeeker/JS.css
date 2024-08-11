@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+.profile-div-button{
+    max-width: 100px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.profile-div-button-span{
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    vertical-align:middle;
+}
+
+.profile-div-button-span-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.job-seeker{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.jb-nav{
+    background-color: antiquewhite;
+    flex : 0 0 auto;
+}
+
+.jb-body{
+    flex : 1 1 auto;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+.jb-menu{
+    background-color: bisque;
+    height: 100%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    max-width: 250px;
+}
+
+.jb-section{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.jb-icon{
+    font-size: 30px !important;
+}
+
+.jb-p{
+    font-size: 18px;
+}
+
+.jb-mobile{
+    overflow: hidden;
+}
+
+.jb-menu-mobile{
+    max-height: fit-content;
+    background-color: antiquewhite;
+}
+
+.jbprofile-pic {
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50%);
+}
+
+.jb-section-mobile{
+    overflow-y: scroll;
+}
+
+.circle{
+    clip-path: circle(50%);
+    background-color: green;
+    width: 20px;
+    height: 20px;
+}
+
+.jb-title{
+    border: 1px solid green;
+    gap: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.jbicon:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+
+.jbprofile-pic:hover img {
+    opacity: 0.5;
+}
+
+
+.jbprofile-pic button, .jbprofile-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.jbprofile-pic img{
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.jbprofile-details{
+    width: 400px;
+    min-height: 200px;
+    height: fit-content;
+    & p{
+        margin : 0px
+    }
+}
+
+
+@media (max-width : 768px){
+    .jb-menu{
+        max-width: 100px;
+    }
+    .jb-p{
+        text-align: center;
+        font-size: 12px;
+    }
+    .jb-icon{
+        font-size: 20px;
+        margin: 0% !important;
+    }
+}
+
+@media (max-width : 575px){
+    .jb-body-mobile{
+        height: calc(100vh - 72px);
+    }
+
+    .jbprofile-details{
+        width: fit-content;
+    }
+}
+
+
+
